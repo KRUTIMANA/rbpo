@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rbpo_volovodovskiy
+  datasource:
+    url: jdbc:postgresql://localhost:5432/data
+    username: ${JDBC_USERNAME}
+    password: ${JDBC_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: ${SECRET_KEY}
+  expiration: 3600000
